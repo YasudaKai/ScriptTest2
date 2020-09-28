@@ -9,7 +9,7 @@ public class Boss
 
     public void Attack()
     {
-        Debug.Log(this.power + "のダメージを与えた")
+        Debug.Log(this.power + "のダメージを与えた");
     }
 
 
