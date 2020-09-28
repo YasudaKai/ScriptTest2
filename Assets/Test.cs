@@ -21,15 +21,15 @@ public class Boss
 
     public void Magic()
     {
-        mp = this.mp - 5;
 
-        if (mp < 0)
+        if (this.mp < 5)
         {
             Debug.Log("MPが足りないため魔法が使えない。");
         }
         else
         {
-            Debug.Log("魔法攻撃をした。残りのMPは" + mp + "。");
+            this.mp -= 5;
+            Debug.Log("魔法攻撃をした。残りのMPは" + this.mp + "。");
         }
         
     }
